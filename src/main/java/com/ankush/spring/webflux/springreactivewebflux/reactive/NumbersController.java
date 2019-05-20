@@ -1,5 +1,6 @@
 package com.ankush.spring.webflux.springreactivewebflux.reactive;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +13,7 @@ import reactor.core.publisher.Flux;
  */
 @RestController
 @RequestMapping("/numbers")
+@Slf4j
 public class NumbersController {
 
     @GetMapping(path = "/count/{number}")
